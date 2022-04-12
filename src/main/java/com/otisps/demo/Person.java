@@ -35,5 +35,11 @@ public class Person {
         return familyName;
     }
 
+    public void setGivenName(String givenName) {
+        this.givenName = givenName;
+    }
 
+    public void setFamilyName(String familyName) {
+        this.familyName = familyName;
+    }
 }
