@@ -16,11 +16,11 @@ public class Person {
     )
     Long id;
     String givenName;
-    String lastName;
+    String familyName;
 
-    public Person(String givenName, String lastName) {
+    public Person(String givenName, String familyName) {
         this.givenName = givenName;
-        this.lastName = lastName;
+        this.familyName = familyName;
     }
 
     public Person() {
@@ -31,8 +31,8 @@ public class Person {
         return givenName;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getFamilyName() {
+        return familyName;
     }
 
 
