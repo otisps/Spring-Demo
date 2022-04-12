@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"xmlns:th="https://www.thymeleaf.org">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <title>Getting Started: Handling Form Submission</title>
     <title>Person Form result</title>
 </head>
 <body>
     <h1>Here are the details for person:</h1>
-    <p th:text="'Given Name for the person : ' + $(person.givenName)"/p>
-    <p th:text="'Family Name for the person : ' +  $(person.familyName)"/p>
+    <p th:text="'Given Name for the person : ' + ${person.givenName}"/p>
+    <p th:text="'Family Name for the person : ' +  ${person.familyName}"/p>
     <p href="/personHello">Submit a new person</p>
 </body>
 </html>
