@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page for spring security example</title>
+</head>
+<body>
+    <div th:if="${param.error}">
+        <p>Invalid username and password.</p>
+    </div>
+    <div th:if="${param.logout}">
+        <p>You have been logged out.</p>
+    </div>
+
+    <form th:action="@{/login}" method="POST">
+        <div class="login">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username"><br>
+        </div>
+        <div class="login">
+            <label for="password"> Password: </label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="login">
+            <input type="submit" value="Login">
+        </div>
+    </form>
+
+
+</body>
+</html>
