@@ -6,7 +6,13 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class PersonController {
-    
+
+    private final PersonService personService;
+
+    public PersonController(PersonService personService) {
+        this.personService = personService;
+    }
+
     @GetMapping("/person")
     public String HelloForm(Model model){
        model.addAttribute("person", new Person());
@@ -16,7 +22,8 @@ public class PersonController {
 
     @PostMapping("/person")
     public String HelloSubmit(@ModelAttribute Person person, Model model){
-        model.addAttribute("person", person);
+        Person createdPerson = this.personService.createNewPerson(person);
+        model.addAttribute("person", createdPerson);
         return "result";
     }
 

@@ -14,9 +14,9 @@ public class Person {
             strategy = GenerationType.SEQUENCE,
             generator = "person_sequence"
     )
-    Long id;
-    String givenName;
-    String familyName;
+    private Long id;
+    private String givenName;
+    private String familyName;
 
     public Person(String givenName, String familyName) {
         this.givenName = givenName;
@@ -34,7 +34,6 @@ public class Person {
     public String getFamilyName() {
         return familyName;
     }
-
     public void setGivenName(String givenName) {
         this.givenName = givenName;
     }
@@ -42,4 +41,5 @@ public class Person {
     public void setFamilyName(String familyName) {
         this.familyName = familyName;
     }
+
 }
