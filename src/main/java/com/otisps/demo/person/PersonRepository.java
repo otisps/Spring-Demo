@@ -1,4 +1,4 @@
-package com.otisps.demo;
+package com.otisps.demo.person;
 
 import org.springframework.data.repository.CrudRepository;
 

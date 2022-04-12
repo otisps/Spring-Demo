@@ -1,6 +1,5 @@
-package com.otisps.demo;
+package com.otisps.demo.person;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
